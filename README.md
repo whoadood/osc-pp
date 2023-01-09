@@ -1,4 +1,11 @@
-![IMAGE](/public/osc-logo.png)
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 30%;"
+    src="/osc-logo.png" 
+    alt="OSC logo">
+</img>
 
 # Open Stick Community - Product Page
 
