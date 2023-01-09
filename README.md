@@ -3,7 +3,7 @@
            margin-left: auto;
            margin-right: auto;
            width: 30%;"
-    src="/osc-logo.png" 
+    src="/public/osc-logo.png" 
     alt="OSC logo">
 </img>
 
