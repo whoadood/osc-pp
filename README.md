@@ -1,4 +1,4 @@
-<div style='display: flex; justify-content: center; align-items: center;'>
+<div style='display: flex; justify-content: center; align-items: center; margin-left: auto; margin-right: auto;'>
 <img 
     style="width: 10%;"
     src="/public/osc-logo.png" 
