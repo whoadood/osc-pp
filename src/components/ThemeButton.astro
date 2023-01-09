@@ -9,11 +9,22 @@ interface Props {
 const { text, alt, href } = Astro.props;
 ---
 
-<a
-  href={href}
-  class={`p-2 rounded group hover:cursor-pointer font-bold ${
-    alt
-      ? "border-2 border-t-cyan-500 border-l-cyan-500 border-r-indigo-600 border-b-indigo-600 hover:bg-white/10"
-      : "bg-gradient-to-br from-cyan-600 to-indigo-700 hover:from-cyan-500 hover:to-indigo-600 text-white"
-  }`}>{alt ? <TextGradient hover={true} text={text} /> : text}</a
->
+{
+  alt ? (
+    <a
+      href={href}
+      class="rounded bg-gradient-to-r from-cyan-600 via-teal-600 to-indigo-600 hover:from-cyan-500 hover:via-teal-500 hover:to-indigo-500 p-0.5 shadow-xl group"
+    >
+      <div class="rounded p-2 bg-slate-200 dark:bg-black font-bold">
+        <TextGradient hover={true} text={text} />
+      </div>
+    </a>
+  ) : (
+    <a
+      href={href}
+      class={`p-2 rounded group hover:cursor-pointer font-bold bg-gradient-to-br from-cyan-600 via-teal-600 to-indigo-700 hover:from-cyan-500 hover:via-teal-500 hover:to-indigo-600 text-white`}
+    >
+      {text}
+    </a>
+  )
+}
