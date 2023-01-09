@@ -1,0 +1,12 @@
+---
+import { hardware } from "../../utils/hardware";
+---
+
+<section class="flex flex-col gap-4 my-20 justify-center items-center">
+  <h2 class="text-xl text-gray-600 dark:text-gray-400">Built with GP2040-CE</h2>
+  <ul
+    class="flex items-center justify-center gap-4 flex-wrap font-bold text-2xl"
+  >
+    {hardware.map((h) => <li>{h.name}</li>)}
+  </ul>
+</section>
