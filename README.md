@@ -1,4 +1,4 @@
-[OSC-logo](/public/osc-logo.png)
+![IMAGE](/public/osc-logo.png)
 
 # Open Stick Community - Product Page
 
