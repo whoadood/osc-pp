@@ -2,7 +2,7 @@
     style="display: block; 
            margin-left: auto;
            margin-right: auto;
-           width: 30%;"
+           width: 10%;"
     src="/public/osc-logo.png" 
     alt="OSC logo">
 </img>
