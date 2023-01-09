@@ -1,0 +1,16 @@
+---
+interface Props {
+  text: string;
+  hover?: boolean;
+}
+
+const { text, hover } = Astro.props;
+---
+
+<span
+  class={`text-transparent bg-clip-text bg-gradient-to-br ${
+    hover
+      ? "from-cyan-600 to-indigo-700 group-hover:from-cyan-500 group-hover:to-indigo-600"
+      : "from-cyan-500 to-indigo-600"
+  }`}>{text}</span
+>

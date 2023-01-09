@@ -1,0 +1,35 @@
+---
+import { navLinks } from "../../utils/navLinks";
+---
+
+<footer class="border-t-2 z-30 border-t-gray-600 fixed inset-x-0 bottom-0 p-4">
+  <div class="grid grid-cols-4">
+    <nav>
+      <h3>Navigation</h3>
+      <ul class="text-gray-600 dark:text-gray-400">
+        {
+          navLinks.map((nl) => (
+            <li>
+              {nl.external ? (
+                <a
+                  class="hover:text-black dark:hover:text-white"
+                  href={nl.href}
+                  target="_blank"
+                >
+                  {nl.title}
+                </a>
+              ) : (
+                <a
+                  class="hover:text-black dark:hover:text-white"
+                  href={nl.href}
+                >
+                  {nl.title}
+                </a>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</footer>

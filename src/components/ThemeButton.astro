@@ -1,0 +1,19 @@
+---
+import TextGradient from "./TextGradient.astro";
+interface Props {
+  text: string;
+  alt?: boolean;
+  href: string;
+}
+
+const { text, alt, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class={`p-2 rounded group hover:cursor-pointer font-bold ${
+    alt
+      ? "border-2 border-t-cyan-500 border-l-cyan-500 border-r-indigo-600 border-b-indigo-600 hover:bg-white/10"
+      : "bg-gradient-to-br from-cyan-600 to-indigo-700 hover:from-cyan-500 hover:to-indigo-600 text-white"
+  }`}>{alt ? <TextGradient hover={true} text={text} /> : text}</a
+>
