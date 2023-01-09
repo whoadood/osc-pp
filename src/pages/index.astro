@@ -5,10 +5,10 @@ import Glass from "../layouts/Glass.astro";
 ---
 
 <Layout title="Welcome to the Open Stick Community!">
-  <main>
-    <!-- <ThemeToggle client:load /> -->
-    <Hero />
-  </main>
-  <div class="h-screen w-screen border-white absolute border-2 blur-xl"></div>
-  <Glass />
+  <Glass>
+    <main>
+      <Hero />
+    </main>
+  </Glass>
+  <div class="h-screen w-screen absolute border-2 -z-10 blur-xl"></div>
 </Layout>

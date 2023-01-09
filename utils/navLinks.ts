@@ -11,7 +11,7 @@ export const navLinks = [
   },
   {
     title: "FAQ",
-    href: "/FAQ",
+    href: "/faq",
     external: false,
   },
 ];
