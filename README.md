@@ -5,6 +5,7 @@
     alt="OSC logo">
 </img>
 </div>
+
 # Open Stick Community - Product Page
 
 This is a product landing page for the open stick community. It is meant to be a central location for all related links to the GP2040-CE firmware and partners.
