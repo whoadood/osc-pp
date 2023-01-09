@@ -12,13 +12,15 @@ For creators looking to be showcased as builders using GP2040-CE, you will need 
    |__hardware.ts
 ```
 
-From there you can follow hardware template to add your information to the hardware list. If you wish to include an image of your project you will need to also include the image file in the [projects](/public/projects/) folder.
+From there you can click on the edit file icon in the upper right hand corner. Once editing follow hardware template to add your information to the hardware list.
+
+If you wish to include an image of your project you will need to also include the image file in the [projects](/public/projects/) folder and update your hardware information with `/<YOUR_FILE_NAME>.<YOUR_FILE_EXTENSION>`.
 
 ```
 /
 |__public/
   |__projects/
-     |__<name_of_your_file>.<your_file_extension>
+     |__<YOUR_FILE_NAME>.<YOUR_FILE_EXTENSION>
 ```
 
 ## 🧞 Commands
