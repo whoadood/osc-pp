@@ -1,12 +1,10 @@
+<div style='display: flex; justify-content: center; align-items: center;'>
 <img 
-    style="display: block; 
-           margin-left: auto;
-           margin-right: auto;
-           width: 10%;"
+    style="width: 10%;"
     src="/public/osc-logo.png" 
     alt="OSC logo">
 </img>
-
+</div>
 # Open Stick Community - Product Page
 
 This is a product landing page for the open stick community. It is meant to be a central location for all related links to the GP2040-CE firmware and partners.
