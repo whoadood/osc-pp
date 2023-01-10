@@ -1,4 +1,11 @@
-export const hardware = [
+export type Hardware = {
+  icon: string | null; // 'https://www.my-icon.com/project' your creator icon url - use null if n/a
+  author: string | null; // your name/handle - use null if n/a
+  image: string | null; // /<YOUR_FILE_NAME>.<YOUR_FILE_EXTENSION> your project image - should be located in the public/projects directory - use null if n/a
+  name: string; // name of project
+  href: string; // link to project website
+};
+export const hardware: Hardware[] = [
   {
     icon: null,
     author: null,

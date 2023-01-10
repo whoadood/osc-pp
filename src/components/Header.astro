@@ -1,7 +1,9 @@
 ---
 import Glass from "../layouts/Glass.astro";
 import ThemeToggle from "./ThemeToggle.jsx";
+import Version from "./Version";
 import { navLinks } from "../../utils/navLinks";
+import TextGradient from "./TextGradient.astro";
 ---
 
 <header class="w-full z-30 border-b-2 fixed border-b-gray-600 font-bold">
@@ -13,7 +15,9 @@ import { navLinks } from "../../utils/navLinks";
         class="flex gap-2 items-center hover:text-black dark:hover:text-white"
         href="/"
         ><img height={30} width={30} src="/osc-logo.png" />
-        <span class="hidden sm:block">Open Stick</span></a
+        <span class="hidden sm:block">Open Stick</span><Version
+          client:load
+        /></a
       >
       <div class="flex items-center gap-2">
         <!-- ************* navigation ************ -->
