@@ -10,6 +10,11 @@ export const navLinks = [
     external: true,
   },
   {
+    title: "Guides",
+    href: "/guides",
+    external: false,
+  },
+  {
     title: "FAQ",
     href: "/faq",
     external: false,
