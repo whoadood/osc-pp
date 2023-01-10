@@ -1,4 +1,4 @@
-type Analytics = {
+export type Analytics = {
   name: string;
   latency: number;
 };
