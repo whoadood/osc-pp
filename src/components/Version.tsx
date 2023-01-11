@@ -20,7 +20,7 @@ export default function Version() {
   }, []);
 
   return (
-    <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-teal-500 to-indigo-600">
+    <span className="text-transparent text-xs sm:text-base bg-clip-text bg-gradient-to-br from-cyan-500 via-teal-500 to-indigo-600">
       {version}
     </span>
   );

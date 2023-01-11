@@ -12,9 +12,9 @@ import { navLinks } from "../../utils/navLinks";
       class="py-2 px-4 flex items-center justify-between w-full dark:text-gray-400 text-gray-600"
     >
       <a
-        class="flex gap-2 items-center hover:text-black dark:hover:text-white"
+        class="flex sm:flex-row flex-col gap-2 items-center hover:text-black dark:hover:text-white"
         href="/"
-        ><img height={30} width={30} src="/osc-logo.png" />
+        ><img class="h-8 w-8" src="/osc-logo.png" />
         <span class="hidden sm:block">Open Stick</span><Version
           client:load
         /></a
@@ -51,7 +51,7 @@ import { navLinks } from "../../utils/navLinks";
         </div>
         <!-- ************* socials ************** -->
         <!-- Discord -->
-        <ul class="flex justify-center gap-2 items-center">
+        <ul class="justify-center gap-2 items-center hidden sm:flex">
           <li class="flex">
             <a
               class="hover:text-black dark:hover:text-white"
@@ -67,7 +67,7 @@ import { navLinks } from "../../utils/navLinks";
             >
           </li>
           <!-- GitHub -->
-          <li class="flex items-center justify-center">
+          <li class="items-center justify-center hidden sm:flex">
             <a
               class="hover:text-black dark:hover:text-white flex items-center justify-center"
               target="_blank"
