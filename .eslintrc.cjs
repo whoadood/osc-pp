@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   env: {
     browser: true,
@@ -7,7 +8,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:astro/recommended",
-    "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
   ],
   overrides: [
@@ -26,10 +26,8 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "jsx-a11y", "prettier"],
+  plugins: ["@typescript-eslint", "prettier"],
   rules: {
-    "jsx-a11y/rule-name": 2,
-    "jsx-a11y/aria-role": 2,
     "prettier/prettier": "error",
   },
 };
