@@ -9,7 +9,9 @@ import TextGradient from "./TextGradient.astro";
     <div class="grid grid-cols-3 p-4 sm:w-1/2">
       <nav>
         <h3 class="font-bold">Navigation</h3>
-        <ul class="text-gray-600 text-sm dark:text-gray-400">
+        <ul
+          class="text-gray-600 text-sm dark:text-gray-400 flex flex-col gap-2 pt-2"
+        >
           {
             [{ title: "Home", href: "/", external: false }, ...navLinks].map(
               (nl) => (
@@ -38,7 +40,9 @@ import TextGradient from "./TextGradient.astro";
       </nav>
       <div>
         <h3 class="font-bold">Attribution</h3>
-        <ul class="text-gray-600 text-sm dark:text-gray-400">
+        <ul
+          class="text-gray-600 text-sm dark:text-gray-400 flex flex-col gap-2 pt-2"
+        >
           <li>
             <a
               class="dark:hover:text-white hover:text-black"
@@ -50,7 +54,9 @@ import TextGradient from "./TextGradient.astro";
       </div>
       <div>
         <h3 class="font-bold">Socials</h3>
-        <ul class="text-gray-600 text-sm dark:text-gray-400">
+        <ul
+          class="text-gray-600 text-sm dark:text-gray-400 flex flex-col gap-2 pt-2"
+        >
           <li>
             <a
               class="dark:hover:text-white hover:text-black"
