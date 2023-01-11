@@ -1,5 +1,6 @@
 ---
 import AuxPageLayout from "../layouts/AuxPageLayout.astro";
+import { faq } from "../../utils/faq";
 ---
 
 <AuxPageLayout
@@ -7,5 +8,16 @@ import AuxPageLayout from "../layouts/AuxPageLayout.astro";
   heading="Frequently Asked Questions"
   subtext="Answers to the most commonly asked questions in the community."
 >
-  <div class="mt-20">dunno what to put here yet 🤷‍♂️</div>
+  <div class="mt-20">
+    <ul class="flex flex-col">
+      {
+        faq.map((q) => (
+          <li class="flex flex-col flex-wrap gap-2 text-center">
+            <p class="text-xl font-bold">{q.question}</p>
+            <p class="text-gray-600 dark:text-gray-400">{q.answer}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </AuxPageLayout>
