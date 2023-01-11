@@ -1,4 +1,5 @@
 ---
+import Contribute from "../../components/Contribute.astro";
 import AuxPageLayout from "../../layouts/AuxPageLayout.astro";
 ---
 
@@ -7,5 +8,9 @@ import AuxPageLayout from "../../layouts/AuxPageLayout.astro";
   heading="Community Created Guides"
   subtext="Open Stick Community supports open source building, and is proud to showcase community guides to walk beginners through getting started and inspiring experienced builders."
 >
-  <div>guides page</div>
+  <Contribute
+    text="Want to help your fellow DIY-ers?"
+    buttonText="Add a write-up"
+    href="https://github.com/whoadood/osc-pp/new/main/src/pages/guides"
+  />
 </AuxPageLayout>

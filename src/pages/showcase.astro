@@ -1,5 +1,7 @@
 ---
 import AuxPageLayout from "../layouts/AuxPageLayout.astro";
+import { hardware } from "../../utils/hardware";
+import Contribute from "../components/Contribute.astro";
 ---
 
 <AuxPageLayout
@@ -7,5 +9,20 @@ import AuxPageLayout from "../layouts/AuxPageLayout.astro";
   heading="Who's using GP2040-CE?"
   subtext="Open Stick Community is one of the fastest growing communities in the peripheral makers ecosystem. GP2040-CE is trusted by dozens of designers, developers and creators as the chip of choice to power a variety of peripherals."
 >
-  <div>showcase</div>
+  <ul class="flex justify-center items-center flex-wrap gap-4 mt-12">
+    {
+      hardware.map((h) => (
+        <li class="text-2xl font-bold">
+          <a href={h.href} target="_blank">
+            {h.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <Contribute
+    text="Are you using GP2040-CE?"
+    buttonText="Add your project"
+    href="https://github.com/whoadood/osc-pp/edit/main/utils/hardware.ts"
+  />
 </AuxPageLayout>
