@@ -4,8 +4,6 @@ export default function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "light");
 
   const handleClick = () => {
-    console.log("onclick", theme);
-
     setTheme(theme === "light" ? "dark" : "light");
   };
 
