@@ -15,7 +15,7 @@ const LatencyChart = () => {
         data: lat.map((x) => x.latency),
         backgroundColor: lat.map((x, i) => {
           if (x.short === "GP2040") {
-            return "#22D3EE";
+            return "#06B6D4";
           } else if (i > 0 && i < 3) {
             return "#14B8A6";
           } else {
@@ -28,6 +28,7 @@ const LatencyChart = () => {
 
   const options = {
     responsive: true,
+    plugins: {},
   };
 
   return (

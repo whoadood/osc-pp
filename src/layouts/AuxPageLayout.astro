@@ -1,0 +1,25 @@
+---
+import TextGradient from "../components/TextGradient.astro";
+import PageWrapper from "./PageWrapper.astro";
+
+interface Props {
+  title: string;
+  heading: string;
+  subtext: string;
+}
+
+const { title, heading, subtext } = Astro.props;
+---
+
+<PageWrapper title={title}>
+  <section class="px-2">
+    <h1 class="text-3xl font-bold flex flex-col text-center mt-20 mb-4">
+      <span class="text-lg"><TextGradient text={title} hover={false} /></span>
+      <span>{heading}</span>
+    </h1>
+    <p class="max-w-2xl text-center text-gray-600 dark:text-gray-400">
+      {subtext}
+    </p>
+    <slot />
+  </section>
+</PageWrapper>
