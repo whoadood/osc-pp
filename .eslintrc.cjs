@@ -29,7 +29,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "jsx-a11y", "prettier"],
   rules: {
     "jsx-a11y/rule-name": 2,
-    "jsx-a11y/aria-role": true,
+    "jsx-a11y/aria-role": 2,
     "prettier/prettier": "error",
   },
 };
