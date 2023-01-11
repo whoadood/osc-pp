@@ -1,5 +1,6 @@
 export type Analytics = {
   name: string;
+  short: string;
   latency: number;
 };
 
@@ -14,48 +15,54 @@ export type Analytics = {
 export const analytics: Analytics[] = [
   {
     name: "FeralAI - GP2040 Encoder",
+    short: "GP2040",
     latency: 0.772,
   },
   {
     name: "Brook - Zero Pi Fighting Board",
+    short: "Zero PFB",
     latency: 1.736,
   },
   {
     name: "Brook - Universal Fighting Board",
+    short: "UFB",
     latency: 0.813,
   },
   {
     name: "Hori Fighting Commander Octa",
+    short: "FC Octa",
     latency: 2.904,
   },
   {
     name: "Hori - Real Arcade Pro 4 Kai",
+    short: "RAP4 Kai",
     latency: 4.345,
   },
   {
     name: "MadCatz - TE2+",
+    short: "MC TE2+",
     latency: 3.83,
   },
-  {
-    name: "Qanba - Obsidian",
-    latency: 3.024,
-  },
-  {
-    name: "Razer - Panthera Evo",
-    latency: 2.296,
-  },
-  {
-    name: "Microsoft - Xbox Elite Series 2 (Wired)",
-    latency: 6.147,
-  },
-  {
-    name: "Sony - DualShock 4 (Wired)",
-    latency: 3.56,
-  },
-  {
-    name: "Amazon - Zero Delay Arcade USB Encoder",
-    latency: 21.264,
-  },
+  //   {
+  //     name: "Amazon - Zero Delay Arcade USB Encoder",
+  //     latency: 21.264,
+  //   },
+  //   {
+  //     name: "Qanba - Obsidian",
+  //     latency: 3.024,
+  //   },
+  //   {
+  //     name: "Razer - Panthera Evo",
+  //     latency: 2.296,
+  //   },
+  //   {
+  //     name: "Microsoft - Xbox Elite Series 2 (Wired)",
+  //     latency: 6.147,
+  //   },
+  //   {
+  //     name: "Sony - DualShock 4 (Wired)",
+  //     latency: 3.56,
+  //   },
 ];
 
 /*
