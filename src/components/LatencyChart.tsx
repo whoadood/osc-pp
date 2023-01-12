@@ -15,11 +15,11 @@ const LatencyChart = () => {
         data: lat.map((x) => x.latency),
         backgroundColor: lat.map((x, i) => {
           if (x.short === "GP2040") {
-            return "#06B6D4";
+            return "#D946EF";
           } else if (i > 0 && i < 3) {
-            return "#14B8A6";
+            return "#F43F5E";
           } else {
-            return "#6366F1";
+            return "#8B5CF6";
           }
         }),
       },
