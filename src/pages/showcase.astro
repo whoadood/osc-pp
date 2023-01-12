@@ -2,6 +2,7 @@
 import AuxPageLayout from "../layouts/AuxPageLayout.astro";
 import { hardware } from "../../utils/hardware";
 import Contribute from "../components/Contribute.astro";
+import VendorCard from "../components/VendorCard.astro";
 ---
 
 <AuxPageLayout
@@ -13,9 +14,7 @@ import Contribute from "../components/Contribute.astro";
     {
       hardware.map((h) => (
         <li class="text-2xl font-bold">
-          <a href={h.href} target="_blank">
-            {h.name}
-          </a>
+          <VendorCard vendor={h} />
         </li>
       ))
     }

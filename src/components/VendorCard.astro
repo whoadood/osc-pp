@@ -1,0 +1,32 @@
+---
+import type { Hardware } from "../../utils/hardware";
+
+interface Props {
+  vendor: Hardware;
+}
+const { vendor } = Astro.props;
+---
+
+<div>
+  {
+    vendor.image && (
+      <img
+        src={vendor.image.light!}
+        alt={`${vendor.name} product image`}
+        height={200}
+        width={200}
+      />
+    )
+  }
+  {
+    vendor.icon ? (
+      <img
+        class="max-h-12 max-w-12"
+        src={vendor.icon}
+        alt={`${vendor.name} icon`}
+      />
+    ) : (
+      vendor.name
+    )
+  }
+</div>
