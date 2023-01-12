@@ -4,8 +4,11 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        marker: ["Permanent Marker", "cursive"],
+      },
       animation: {
-        "spin-slow": "spin 25s linear infinite",
+        "pulse-slow": "pulse 6s linear infinite",
       },
     },
   },

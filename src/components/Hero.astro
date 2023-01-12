@@ -2,20 +2,30 @@
 import TextGradient from "./TextGradient.astro";
 import ThemeButton from "./ThemeButton.astro";
 
-const logo = "/osc-logo.png";
+const logo = "/circuit-bg.svg";
 ---
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+</style>
 
 <section class="text-center relative">
   <div class="dark:bg-black/70 bg-slate-200/60 h-full w-full p-4">
     <div class="relative my-8">
       <img
-        class="mx-auto motion-safe:animate-spin-slow"
-        alt="GP2040 logo"
+        class="bg-clip-text sm:motion-safe:animate-pulse-slow stroke-inherit bg-gradient-to-br from-rose-400 via-fuchsia-400 to-violet-400 w-full h-full"
+        alt="GP2040 logo background"
         src={logo}
         height={250}
         width={250}
       />
-      <div class="absolute top-0 bottom-0 right-0 left-0"></div>
+      <div
+        class="absolute top-0 bottom-0 right-0 left-0 z-10 shadow-[inset_0_0px_70px_70px_rgba(226,232,240,.99)] dark:shadow-[inset_0_0px_100px_100px_rgb(0,0,0,.75)] flex justify-center items-center"
+      >
+        <span class="text-4xl sm:text-6xl font-marker font-bold"
+          ><TextGradient text="GP2040-CE" /></span
+        >
+      </div>
     </div>
     <h1 class="text-4xl font-bold mb-4">
       <span class="hidden sm:block">Welcome to</span>{" "}<TextGradient
