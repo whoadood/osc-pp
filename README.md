@@ -12,7 +12,7 @@ This is a product landing page for the open stick community. It is meant to be a
 
 ## 🪄 Creators
 
-For creators looking to be showcased as builders using GP2040-CE, you will need to create a fork of this repo. Once forked you will want to navigate to the [vendors.ts](/utils/vendors.ts).
+For creators looking to be showcased as builders using GP2040-CE, you will need to create a fork of this repo. Once forked you will want to navigate to the [vendors.ts](/utils/vendors.ts) file.
 
 ```
 /
@@ -20,9 +20,9 @@ For creators looking to be showcased as builders using GP2040-CE, you will need 
    |__vendors.ts
 ```
 
-From there you can click on the edit file icon in the upper right hand corner. Once editing follow hardware template to add your information to the hardware list.
+From there you can click on the edit file icon in the upper right hand corner. Once editing follow vendor template to add your information to the hardware list.
 
-If you wish to include an image of your project you will need to also include the image file in the [projects](/public/projects/) folder and update your hardware information with `/<YOUR_FILE_NAME>.<YOUR_FILE_EXTENSION>`.
+If you wish to include an image of your project and its not hosted on a CDN, you will need to also include the image file in the [projects](/public/projects/) folder and update your hardware information with `/<YOUR_FILE_NAME>.<YOUR_FILE_EXTENSION>`.
 
 ```
 /
