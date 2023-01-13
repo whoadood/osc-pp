@@ -17,7 +17,7 @@ const { vendor } = Astro.props;
   {
     vendor.image ? (
       <div
-        style={{ backgroundImage: `url('${vendor.image.light}')` }}
+        style={{ backgroundImage: `url('${vendor.image}')` }}
         class={`h-32 w-full bg-center bg-cover bg-no-repeat flex-grow rounded-t`}
       />
     ) : (
@@ -39,7 +39,7 @@ const { vendor } = Astro.props;
     class="flex flex-col justify-center items-center py-2 px-4 dark:bg-black rounded-b"
   >
     {
-      vendor.icon ? (
+      vendor.icon && vendor.name !== "Mister-Addon" ? (
         <img
           class="max-h-12 w-auto"
           src={vendor.icon}
