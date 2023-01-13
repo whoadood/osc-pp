@@ -2,6 +2,7 @@
 import { navLinks } from "../../utils/navLinks";
 import Glass from "../layouts/Glass.astro";
 import TextGradient from "./TextGradient.astro";
+import { attributions } from "../../utils/attributions";
 ---
 
 <footer class="border-t-2 z-30 border-t-gray-600 inset-x-0 bottom-0">
@@ -44,13 +45,19 @@ import TextGradient from "./TextGradient.astro";
           <ul
             class="text-gray-600 text-sm dark:text-gray-400 flex flex-col gap-2 pt-2"
           >
-            <li>
-              <a
-                class="dark:hover:text-white hover:text-black"
-                target="_blank"
-                href="https://github.com/FeralAI">FeralAI</a
-              >
-            </li>
+            {
+              attributions.map((at) => (
+                <li>
+                  <a
+                    class="dark:hover:text-white hover:text-black"
+                    target="_blank"
+                    href={at.href}
+                  >
+                    {at.name}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div>
