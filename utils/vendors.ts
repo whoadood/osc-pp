@@ -1,4 +1,4 @@
-export type Hardware = {
+export type Vendor = {
   icon: string | null; // 'https://www.my-icon.com/project' your creator icon url - use null if n/a
   author: string | null; // your name/handle - use null if n/a
   image: {
@@ -8,7 +8,7 @@ export type Hardware = {
   name: string; // name of project
   href: string; // link to project website
 };
-export const hardware: Hardware[] = [
+export const vendors: Vendor[] = [
   {
     icon: "https://cdn.shopify.com/s/files/1/0612/9211/8210/files/ScrubTier_Hor_Logo_White_220x.png?v=1647889827",
     author: "SCRUBTIER",

@@ -1,16 +1,16 @@
 ---
-import type { Hardware } from "../../utils/hardware";
+import type { Vendor } from "../../utils/vendors";
 import logo from "/circuit-bg.svg";
 import TextGradient from "./TextGradient.astro";
 
 interface Props {
-  vendor: Hardware;
+  vendor: Vendor;
 }
 const { vendor } = Astro.props;
 ---
 
 <a
-  class="flex flex-col bg-gradient-to-br from-rose-500 via-fuchsia-500 to-violet-500 p-0.5 rounded text-white hover:scale-105 ease-out duration-75 transition-transform"
+  class="flex flex-col bg-gradient-to-br from-rose-500 via-fuchsia-500 to-violet-500 p-0.5 shadow-xl rounded text-white hover:scale-105 ease-out duration-75 transition-transform"
   href={vendor.href}
   target="_blank"
 >
@@ -21,7 +21,7 @@ const { vendor } = Astro.props;
         class={`h-32 w-full bg-center bg-cover bg-no-repeat flex-grow rounded-t`}
       />
     ) : (
-      <div class="relative w-full flex justify-center items-center overflow-hidden flex-grow bg-black/70">
+      <div class="relative w-full flex justify-center items-center overflow-hidden flex-grow dark:bg-black/70 bg-white/90">
         <img
           class="bg-clip-text h-32 stroke-inherit bg-gradient-to-br from-rose-400 via-fuchsia-400 to-violet-400"
           alt="GP2040 logo background"

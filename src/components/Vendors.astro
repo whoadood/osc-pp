@@ -1,5 +1,5 @@
 ---
-import { hardware } from "../../utils/hardware";
+import { vendors } from "../../utils/vendors";
 ---
 
 <section
@@ -14,7 +14,7 @@ import { hardware } from "../../utils/hardware";
     <ul
       class="flex items-center justify-center gap-4 flex-wrap font-bold text-2xl"
     >
-      {hardware.slice(0, 6).map((h) => <li>{h.name}</li>)}
+      {vendors.slice(0, 6).map((v) => <li>{v.name}</li>)}
     </ul>
   </div>
 </section>
