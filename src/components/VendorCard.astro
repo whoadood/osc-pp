@@ -1,5 +1,7 @@
 ---
 import type { Hardware } from "../../utils/hardware";
+import logo from "/circuit-bg.svg";
+import TextGradient from "./TextGradient.astro";
 
 interface Props {
   vendor: Hardware;
@@ -7,26 +9,45 @@ interface Props {
 const { vendor } = Astro.props;
 ---
 
-<div>
+<a
+  class="flex flex-col bg-gradient-to-br from-rose-500 via-fuchsia-500 to-violet-500 p-0.5 rounded text-white"
+  href={vendor.href}
+  target="_blank"
+>
   {
-    vendor.image && (
-      <img
-        src={vendor.image.light!}
-        alt={`${vendor.name} product image`}
-        height={200}
-        width={200}
-      />
-    )
-  }
-  {
-    vendor.icon ? (
-      <img
-        class="max-h-12 max-w-12"
-        src={vendor.icon}
-        alt={`${vendor.name} icon`}
+    vendor.image ? (
+      <div
+        style={{ backgroundImage: `url('${vendor.image.light}')` }}
+        class={`h-32 w-full bg-center bg-cover bg-no-repeat flex-grow rounded-t`}
       />
     ) : (
-      vendor.name
+      <div class="relative w-full flex justify-center items-center overflow-hidden flex-grow bg-black/70">
+        <img
+          class="bg-clip-text h-32 stroke-inherit bg-gradient-to-br from-rose-400 via-fuchsia-400 to-violet-400"
+          alt="GP2040 logo background"
+          src={logo}
+        />
+        <div class="absolute top-0 bottom-0 flex-grow right-0 left-0 z-10 shadow-[inset_0_0px_70px_70px_rgba(226,232,240,.90)] dark:shadow-[inset_0_0px_50px_50px_rgb(0,0,0,.8)] flex justify-center items-center">
+          <span class="font-marker font-bold">
+            <TextGradient text="GP2040-CE" />
+          </span>
+        </div>
+      </div>
     )
   }
-</div>
+  <div
+    class="flex flex-col justify-center items-center py-2 px-4 dark:bg-black rounded-b"
+  >
+    {
+      vendor.icon ? (
+        <img
+          class="max-h-12 w-auto"
+          src={vendor.icon}
+          alt={`${vendor.name} icon`}
+        />
+      ) : (
+        <span class="py-2">{vendor.name}</span>
+      )
+    }
+  </div>
+</a>
