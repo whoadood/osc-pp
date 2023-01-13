@@ -12,12 +12,12 @@ This is a product landing page for the open stick community. It is meant to be a
 
 ## 🪄 Creators
 
-For creators looking to be showcased as builders using GP2040-CE, you will need to create a fork of this repo. Once forked you will want to navigate to the [hardware.ts](/utils/hardware.ts).
+For creators looking to be showcased as builders using GP2040-CE, you will need to create a fork of this repo. Once forked you will want to navigate to the [vendors.ts](/utils/vendors.ts).
 
 ```
 /
 |__utils/
-   |__hardware.ts
+   |__vendors.ts
 ```
 
 From there you can click on the edit file icon in the upper right hand corner. Once editing follow hardware template to add your information to the hardware list.
