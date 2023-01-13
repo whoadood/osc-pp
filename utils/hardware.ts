@@ -10,7 +10,7 @@ export type Hardware = {
 };
 export const hardware: Hardware[] = [
   {
-    icon: "cdn.shopify.com/s/files/1/0612/9211/8210/files/ScrubTier_Hor_Logo_White_220x.png?v=1647889827",
+    icon: "https://cdn.shopify.com/s/files/1/0612/9211/8210/files/ScrubTier_Hor_Logo_White_220x.png?v=1647889827",
     author: "SCRUBTIER",
     image: {
       light:
