@@ -36,7 +36,8 @@ export const vendors: Vendor[] = [
   {
     icon: null,
     author: "Chastetiddy",
-    image: null,
+    image:
+      "https://cdn.discordapp.com/attachments/1049370166049394829/1051980324340506705/IMG_5109.jpg",
     name: "Chastetiddy",
     href: "https://github.com/chastetiddy/chastity_device",
   },
@@ -51,7 +52,8 @@ export const vendors: Vendor[] = [
   {
     icon: null,
     author: "SleepUnit",
-    image: null,
+    image:
+      "https://thearcadestick.com/wp-content/uploads/2021/10/Crush-Counter-1024x572.jpg",
     name: "CrushCounter",
     href: "https://github.com/SleepUnit/CrushCounter",
   },
