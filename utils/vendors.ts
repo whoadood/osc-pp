@@ -92,4 +92,54 @@ export const vendors: Vendor[] = [
     name: "Mister-Addon",
     href: "https://misteraddons.com/collections/parts/products/reflex-encode-fighting-board",
   },
+  {
+    icon: "https://avatars.githubusercontent.com/u/32771064?v=4",
+    author: "TheTrain",
+    image:
+      "https://cdn.discordapp.com/attachments/1064205043059933284/1064206629282783293/Pico_Arcade_Breakout_Board_-_Front_render.png",
+    name: "Pico Arcade Breakout Board",
+    href: "https://github.com/TheTrainGoes/GP2040-Projects/tree/main/Pico%20Arcade%20Breakout%20Board",
+  },
+  {
+    icon: "https://avatars.githubusercontent.com/u/32771064?v=4",
+    author: "TheTrain",
+    image:
+      "https://cdn.discordapp.com/attachments/1064207862135525517/1064208490907828275/Pico_Mini_Fighter_-_Front_render.png",
+    name: "Pico Mini Fighter",
+    href: "https://github.com/TheTrainGoes/GP2040-Projects/tree/main/Pico%20Mini%20Fighter",
+  },
+  {
+    icon: "https://avatars.githubusercontent.com/u/32771064?v=4",
+    author: "TheTrain",
+    image:
+      "https://cdn.discordapp.com/attachments/1064204964056027156/1064206283827318865/Pico_Advanced_Breakout_Board_-_Assembled.JPG",
+    name: "Pico Advanced Breakout Board",
+    href: "https://github.com/TheTrainGoes/GP2040-Projects/tree/main/Pico%20Advanced%20Breakout%20Board",
+  },
+  {
+    icon: "https://avatars.githubusercontent.com/u/32771064?v=4",
+    author: "TheTrain",
+    image:
+      "https://cdn.discordapp.com/attachments/1064204904924712960/1064205659408695387/Pico_Basic_Breakout_Board_-_Front_render.png",
+    name: "Pico Basic Breakout Board",
+    href: "https://github.com/TheTrainGoes/GP2040-Projects/tree/main/Pico%20Basic%20Breakout%20Board",
+  },
+  {
+    icon: "https://avatars.githubusercontent.com/u/32771064?v=4",
+    author: "TheTrain",
+    image:
+      "https://cdn.discordapp.com/attachments/1064204934398083235/1064207605637062747/Screen_Shot_2023-01-15_at_10.40.27_AM.png",
+    name: "Pico EZ Connect",
+    href: "https://github.com/TheTrainGoes/GP2040-Projects/",
+  },
 ];
+/* 
+{
+    icon: null,
+    author: "TheTrain",
+    image:
+      "",
+    name: "Pico Mini Fighter",
+    href: "",
+  },
+*/
