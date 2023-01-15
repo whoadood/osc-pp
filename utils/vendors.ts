@@ -133,13 +133,3 @@ export const vendors: Vendor[] = [
     href: "https://github.com/TheTrainGoes/GP2040-Projects/",
   },
 ];
-/* 
-{
-    icon: null,
-    author: "TheTrain",
-    image:
-      "",
-    name: "Pico Mini Fighter",
-    href: "",
-  },
-*/
