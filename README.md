@@ -5,6 +5,9 @@
     alt="OSC logo">
 </img>
 </div>
+![osc-pp-preview](https://user-images.githubusercontent.com/82413454/212570091-062cf851-069a-4483-a810-f00aa081550a.png)
+
+
 
 # Open Stick Community - Product Page
 
