@@ -1,7 +1,4 @@
-![Screenshot 2023-01-18 at 04-53-54 Welcome to the Open Stick Community!](https://user-images.githubusercontent.com/82413454/213140374-75a69fdc-9d6c-40d2-8f81-c15af169bd67.png)
-
-
-
+![Open Stick Community](https://user-images.githubusercontent.com/82413454/213140374-75a69fdc-9d6c-40d2-8f81-c15af169bd67.png)
 
 # Open Stick Community - Product Page
 
