@@ -53,7 +53,7 @@ export const vendors: Vendor[] = [
     icon: null,
     author: "SleepUnit",
     image:
-      "https://thearcadestick.com/wp-content/uploads/2021/10/Crush-Counter-1024x572.jpg",
+      "https://thearcadestick.com/wp-content/uploads/2021/10/Crush-Counter-300x167.jpg",
     name: "CrushCounter",
     href: "https://github.com/SleepUnit/CrushCounter",
   },
