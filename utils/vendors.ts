@@ -132,4 +132,12 @@ export const vendors: Vendor[] = [
     name: "Pico EZ Connect",
     href: "https://github.com/TheTrainGoes/GP2040-Projects/",
   },
+  {
+    icon: null,
+    author: "Lucipher",
+    image:
+      "https://media.printables.com/media/prints/362200/images/3190070_4674555b-368a-4a7c-be5d-f2c7bad2ae73/thumbs/cover/640x480/jpg/20230118_184104.webp",
+    name: "OFS3D",
+    href: "https://www.printables.com/model/362200-ofs3d-3d-printable-arcade-stick-v1-boombox",
+  },
 ];

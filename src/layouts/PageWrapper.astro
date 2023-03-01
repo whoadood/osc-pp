@@ -46,7 +46,9 @@ const { title } = Astro.props;
     class="bg-slate-200 dark:bg-black text-black dark:text-white flex flex-col h-screen"
   >
     <Header />
-    <div class="max-w-7xl flex-grow mx-auto flex flex-col items-center py-12">
+    <div
+      class="max-w-7xl flex-grow mx-auto flex flex-col items-center pt-12 pb-40"
+    >
       <slot />
     </div>
     <Footer />
